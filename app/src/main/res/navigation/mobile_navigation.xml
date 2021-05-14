@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_connect">
+
+    <fragment
+        android:id="@+id/nav_connect"
+        android:name="com.ducnguyen.iproject.ui.connect_server.ServerFragment"
+        android:label="@string/menu_connect"
+        tools:layout="@layout/fragment_connect" />
+
+    <fragment
+        android:id="@+id/nav_subscribe"
+        android:name="com.ducnguyen.iproject.ui.subscribe.SubscribeFragment"
+        android:label="@string/menu_subscribe"
+        tools:layout="@layout/fragment_subscribe" />
+
+    <fragment
+        android:id="@+id/nav_publish"
+        android:name="com.ducnguyen.iproject.ui.publish.PublishFragment"
+        android:label="@string/menu_publish"
+        tools:layout="@layout/fragment_publish" />
+
+    <fragment
+        android:id="@+id/nav_chat"
+        android:name="com.ducnguyen.iproject.ui.chat.ChatFragment"
+        android:label="@string/menu_chat"
+        tools:layout="@layout/fragment_chat" />
+
+</navigation>
